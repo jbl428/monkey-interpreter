@@ -6,22 +6,21 @@ cabal-version: 1.12
 
 name:           monkey-interpreter
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/monkey-interpreter#readme>
-homepage:       https://github.com/githubuser/monkey-interpreter#readme
-bug-reports:    https://github.com/githubuser/monkey-interpreter/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2021 Author name here
-license:        BSD3
+description:    Please see the README on GitHub at <https://github.com/jbl428/monkey-interpreter#readme>
+homepage:       https://github.com/jbl428/monkey-interpreter#readme
+bug-reports:    https://github.com/jbl428/monkey-interpreter/issues
+author:         Jake Son
+maintainer:     sonjeabin@gmail.com
+copyright:      2021 Jake Son
+license:        MIT
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    ChangeLog.md
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/monkey-interpreter
+  location: https://github.com/jbl428/monkey-interpreter
 
 library
   exposed-modules:
@@ -56,5 +55,6 @@ test-suite monkey-interpreter-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , hspec
     , monkey-interpreter
   default-language: Haskell2010
