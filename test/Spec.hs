@@ -1,5 +1,5 @@
 import Data.Foldable (for_)
-import Lib (Token (..), getToken)
+import Lexer.Token (Token (..), getToken)
 import Test.Hspec (describe, hspec, it, shouldBe)
 
 main :: IO ()
